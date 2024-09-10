@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cb25bes8mf0pe"]
+[gd_scene load_steps=6 format=3 uid="uid://cb25bes8mf0pe"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_oew6j"]
 [ext_resource type="PackedScene" uid="uid://dcgtp3hoqc1ui" path="res://maps/Tiles/TileMap.tscn" id="2_13jle"]
 [ext_resource type="PackedScene" uid="uid://cavrcreymdrqm" path="res://maps/Mobs/Infantry.tscn" id="3_mnulj"]
+[ext_resource type="PackedScene" uid="uid://d3yekuc73wyry" path="res://machine_gun_tower.tscn" id="4_essv2"]
 
 [sub_resource type="Curve2D" id="Curve2D_gkp6a"]
 _data = {
@@ -30,3 +31,6 @@ position = Vector2(128, 128)
 rotation = 1.10715
 
 [node name="Infantry" parent="Path2D/PathFollow2D" instance=ExtResource("3_mnulj")]
+
+[node name="MachineGunTower" parent="." instance=ExtResource("4_essv2")]
+position = Vector2(200, 88)
