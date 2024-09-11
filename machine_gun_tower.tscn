@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3yekuc73wyry"]
+
+[ext_resource type="Texture2D" uid="uid://bcqei1a2raapw" path="res://assets/MachineGunTowerLevel1.png" id="1_w1hgc"]
+
+[node name="MachineGunTower" type="StaticBody2D"]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(2, 2)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="MachineGunTowerLevel1" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_w1hgc")
