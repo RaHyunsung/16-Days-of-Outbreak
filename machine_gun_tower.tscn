@@ -1,24 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3yekuc73wyry"]
+[gd_scene load_steps=4 format=3 uid="uid://d3yekuc73wyry"]
 
 [ext_resource type="Texture2D" uid="uid://bcqei1a2raapw" path="res://assets/MachineGunTowerLevel1.png" id="1_w1hgc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mieam"]
+size = Vector2(3.5, 8.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ek33h"]
+radius = 70.0
 
 [node name="MachineGunTower" type="StaticBody2D"]
 scale = Vector2(2, 2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(2, 2)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_mieam")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 scale = Vector2(2, 2)
 
-[node name="Area2D" type="Area2D" parent="."]
-scale = Vector2(2, 2)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(2, 2)
-
-[node name="Node" type="Node" parent="."]
-
 [node name="MachineGunTowerLevel1" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_w1hgc")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_ek33h")
+
+[node name="Node" type="Node" parent="."]
