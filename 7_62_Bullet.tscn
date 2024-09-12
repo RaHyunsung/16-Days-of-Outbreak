@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi0hgthfv4liv"]
+
+[ext_resource type="Texture2D" uid="uid://da7321cvhwo1h" path="res://Projectiles/7.62mm/7.62mm.png" id="1_5f1wk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4psn3"]
+radius = 80.0
+height = 320.0
+
+[node name="7_62mm_Bullet" type="CharacterBody2D"]
+scale = Vector2(0.1, 0.1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.13, 0.13)
+shape = SubResource("CapsuleShape2D_4psn3")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.13, 0.13)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(7.69231, 7.69231)
+
+[node name="7_62mm" type="Sprite2D" parent="."]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_5f1wk")

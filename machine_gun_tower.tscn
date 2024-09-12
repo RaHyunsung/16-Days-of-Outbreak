@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3yekuc73wyry"]
+[gd_scene load_steps=4 format=3 uid="uid://d3yekuc73wyry"]
 
-[ext_resource type="Script" path="res://machine_gun_tower.gd" id="1_uxkgh"]
 [ext_resource type="Texture2D" uid="uid://bcqei1a2raapw" path="res://assets/MachineGunTowerLevel1.png" id="1_w1hgc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mieam"]
@@ -11,23 +10,22 @@ radius = 70.0
 
 [node name="MachineGunTower" type="StaticBody2D"]
 scale = Vector2(2, 2)
-script = ExtResource("1_uxkgh")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_mieam")
 
-[node name="Area" type="Marker2D" parent="."]
+[node name="Marker2D" type="Marker2D" parent="."]
 scale = Vector2(2, 2)
 
 [node name="MachineGunTowerLevel1" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_w1hgc")
 
-[node name="Tower" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 scale = Vector2(2, 2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tower"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_ek33h")
 
 [node name="Node" type="Node" parent="."]
