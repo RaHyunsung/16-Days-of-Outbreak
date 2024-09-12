@@ -33,4 +33,4 @@ rotation = 1.10715
 [node name="Infantry" parent="Path2D/PathFollow2D" instance=ExtResource("3_mnulj")]
 
 [node name="MachineGunTower" parent="." instance=ExtResource("4_essv2")]
-position = Vector2(200, 88)
+position = Vector2(512, 216)
