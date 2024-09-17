@@ -92,5 +92,3 @@ var wave = 0
 var mobsLeft = 0
 var waveMobs = [5,6,10,20,40,0]
 var waveSpeed = [1,1,0,5,0.5,0.3,100]
-
-

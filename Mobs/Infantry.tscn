@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://cavrcreymdrqm"]
 
-[ext_resource type="Script" path="res://maps/Mobs/Infantry.gd" id="1_vem3b"]
+[ext_resource type="Script" path="res://Mobs/Infantry.gd" id="1_vem3b"]
 [ext_resource type="Texture2D" uid="uid://bglsyve57xa0t" path="res://assets/Pistol2.png" id="2_u3j6t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mvfxv"]
-radius = 46.0435
+radius = 43.2897
 
 [node name="Infantry" type="CharacterBody2D"]
 script = ExtResource("1_vem3b")
