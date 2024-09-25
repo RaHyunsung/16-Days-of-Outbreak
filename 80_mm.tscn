@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cren0qmwrtbsi"]
+
+[ext_resource type="Texture2D" uid="uid://cpywusxsbtx0n" path="res://Projectiles/80mm/80mm.png" id="1_m3ktp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ihi3"]
+radius = 115.385
+height = 661.539
+
+[node name="80mm" type="CharacterBody2D"]
+
+[node name="80Mm" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_m3ktp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.13, 0.13)
+shape = SubResource("CapsuleShape2D_0ihi3")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.13, 0.13)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(7.69231, 7.69231)

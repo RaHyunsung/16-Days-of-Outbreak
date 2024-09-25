@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_oew6j"]
 [ext_resource type="Script" path="res://maps/PathSpawner.gd" id="3_jmne4"]
-[ext_resource type="PackedScene" uid="uid://d3yekuc73wyry" path="res://Towers/machine_gun_tower.tscn" id="4_essv2"]
+[ext_resource type="PackedScene" uid="uid://d3yekuc73wyry" path="res://machine_gun_tower.tscn" id="4_essv2"]
 [ext_resource type="Texture2D" uid="uid://cy0vl1h8uhwjr" path="res://kenney_tower-defense-top-down/Tilesheet/towerDefense_tilesheet.png" id="5_d3pr1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_835ot"]
@@ -4453,5 +4453,14 @@ autostart = true
 
 [node name="MachineGunTower2" parent="Towers" instance=ExtResource("4_essv2")]
 position = Vector2(528, 705)
+
+[node name="MachineGunTower" parent="Towers" instance=ExtResource("4_essv2")]
+position = Vector2(1527, 1175)
+
+[node name="MachineGunTower3" parent="Towers" instance=ExtResource("4_essv2")]
+position = Vector2(2841, 1030)
+
+[node name="targetNode" type="Node2D" parent="."]
+position = Vector2(4090, 1687)
 
 [connection signal="timeout" from="PathSpawner/Timer" to="PathSpawner" method="_on_timer_timeout"]

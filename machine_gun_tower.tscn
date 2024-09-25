@@ -18,18 +18,19 @@ scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_mieam")
 
 [node name="Aim" type="Marker2D" parent="."]
-position = Vector2(0, 40)
+position = Vector2(40, 0)
 scale = Vector2(2, 2)
 
 [node name="MachineGunTowerLevel1" type="Sprite2D" parent="."]
+rotation = 4.71239
 scale = Vector2(5, 5)
 texture = ExtResource("1_w1hgc")
 
 [node name="Tower" type="Area2D" parent="."]
+rotation = 3.14159
 scale = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tower"]
-rotation = 1.5708
 shape = SubResource("CircleShape2D_ek33h")
 
 [node name="BulletContainer" type="Node" parent="."]

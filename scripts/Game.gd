@@ -87,6 +87,14 @@ var WILD_CARDS = [
 	]
 ]
 
+var MOBS = [
+	"Infantry"
+]
+
+var PROJECTILES = {
+	"Infantry" : ["80mm"]
+}
+
 var points = 25
 var wave = 0
 var mobsLeft = 0

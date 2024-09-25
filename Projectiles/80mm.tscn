@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbhrimct12vuc"]
+
+[ext_resource type="Script" path="res://Projectiles/80_mm.gd" id="1_g7dh0"]
+[ext_resource type="PackedScene" uid="uid://cren0qmwrtbsi" path="res://80_mm.tscn" id="1_hnj0c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cah1m"]
+radius = 13.0
+height = 88.0
+
+[node name="80MM" type="CharacterBody2D"]
+rotation = 1.5708
+script = ExtResource("1_g7dh0")
+
+[node name="Area2D" type="Area2D" parent="."]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_cah1m")
+
+[node name="80mm" parent="." instance=ExtResource("1_hnj0c")]
+rotation = 1.5708
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
