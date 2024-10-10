@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_oew6j"]
 [ext_resource type="Script" path="res://maps/PathSpawner.gd" id="3_jmne4"]
 [ext_resource type="PackedScene" uid="uid://d3yekuc73wyry" path="res://machine_gun_tower.tscn" id="4_essv2"]
-[ext_resource type="PackedScene" uid="uid://mk1hv4pt7ltk" path="res://ui.tscn" id="5_21p6n"]
+[ext_resource type="PackedScene" uid="uid://buxwijrwid2iw" path="res://ui.tscn" id="5_21p6n"]
 [ext_resource type="Texture2D" uid="uid://cy0vl1h8uhwjr" path="res://kenney_tower-defense-top-down/Tilesheet/towerDefense_tilesheet.png" id="5_d3pr1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_835ot"]

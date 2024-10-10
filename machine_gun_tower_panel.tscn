@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c30i7kevilmk3"]
+[gd_scene load_steps=3 format=3 uid="uid://dpkpl6bux8x76"]
 
 [ext_resource type="Texture2D" uid="uid://bcqei1a2raapw" path="res://assets/MachineGunTowerLevel1.png" id="1_1pqis"]
 [ext_resource type="Script" path="res://machine_gun_tower_panel.gd" id="1_m1bwj"]

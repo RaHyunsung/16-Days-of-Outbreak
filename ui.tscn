@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://mk1hv4pt7ltk"]
+[gd_scene load_steps=2 format=3 uid="uid://buxwijrwid2iw"]
 
-[ext_resource type="PackedScene" uid="uid://c30i7kevilmk3" path="res://machine_gun_tower_panel.tscn" id="1_20dmi"]
+[ext_resource type="PackedScene" uid="uid://dpkpl6bux8x76" path="res://machine_gun_tower_panel.tscn" id="1_20dmi"]
 
 [node name="UI" type="CanvasLayer"]
 

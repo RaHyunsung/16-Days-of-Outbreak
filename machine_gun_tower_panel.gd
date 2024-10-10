@@ -4,9 +4,11 @@ extends Panel
 var currTile  # Currently selected tile (can be used for grid placement)
 var tempTower = null  # Holds the temporary tower while placing
 var is_dragging = false  # To track if the player is dragging the tower
+var thred: Thread
 
 # Grid snapping (optional)
 var grid_size = 32
+	
 
 func _on_gui_input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -15,10 +17,11 @@ func _on_gui_input(event):
 			# Instantiate tower if none exists and left-click pressed
 			tempTower = tower.instantiate()
 			add_child(tempTower)
+			print(tempTower)
 			tempTower.global_position = event.global_position  # Set initial position
+			tempTower.scale = Vector2(0.7, 0.7)
 			tempTower.process_mode = Node.PROCESS_MODE_DISABLED  # Disable tower processing while dragging
 
-		elif event.button_index == MOUSE_BUTTON_LEFT and tempTower != null:
 			# Start dragging the tower
 			is_dragging = true
 
