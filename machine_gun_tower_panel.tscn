@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c30i7kevilmk3"]
+
+[ext_resource type="Texture2D" uid="uid://bcqei1a2raapw" path="res://assets/MachineGunTowerLevel1.png" id="1_1pqis"]
+[ext_resource type="Script" path="res://machine_gun_tower_panel.gd" id="1_m1bwj"]
+
+[node name="MachineGunTowerPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_m1bwj")
+
+[node name="MachineGunTowerLevel1" type="Sprite2D" parent="."]
+position = Vector2(40, 40)
+scale = Vector2(3.67857, 3.67857)
+texture = ExtResource("1_1pqis")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

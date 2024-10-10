@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://mk1hv4pt7ltk"]
+
+[ext_resource type="PackedScene" uid="uid://c30i7kevilmk3" path="res://machine_gun_tower_panel.tscn" id="1_20dmi"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 3960.0
+offset_right = 4600.0
+offset_bottom = 2048.0
+
+[node name="FlowContainer" type="FlowContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 235.0
+offset_bottom = 704.0
+scale = Vector2(3, 3)
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+
+[node name="MachineGunTowerPanel" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel2" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel3" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel4" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel5" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel6" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel7" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel8" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel9" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel10" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel11" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel12" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel13" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
+
+[node name="MachineGunTowerPanel14" parent="Panel/FlowContainer" instance=ExtResource("1_20dmi")]
+layout_mode = 2
